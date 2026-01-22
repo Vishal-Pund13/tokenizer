@@ -43,6 +43,9 @@ const HomePage = () => {
       }
     // NEW: When learning is done, force a re-check of current text
     if (data.type === "SCRAPE_COMPLETE") {
+      fetch("https://my-tokenizer.duckdns.org/api/vocab-size")
+        .then(res => res.json())
+        .then(data => setVocabSize(data.vocab_size));
     if (text && socket.current?.readyState === WebSocket.OPEN) {
       socket.current.send(JSON.stringify({ text }));
     }
