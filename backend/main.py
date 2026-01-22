@@ -130,3 +130,5 @@ async def websocket_endpoint(websocket: WebSocket):
     except WebSocketDisconnect:
         active_connections.remove(websocket)
         print("🔌 WebSocket closed by client.")
+
+app = app

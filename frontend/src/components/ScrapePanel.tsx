@@ -29,7 +29,7 @@ const ScrapePanel: React.FC = () => {
 
   return (
     <div className="flex flex-col gap-3 w-full">
-      <h2 className="text-lg md:text-xl font-bold text-white">Training Hub</h2>
+      <h2 className="text-lg md:text-xl font-bold text-white">Increase Vocab</h2>
       
       <div className="flex gap-2 w-full">
         <Input 
